@@ -15,6 +15,6 @@
         ./build.sh
         ./test
     
-  作者：金德才
+  作者：德才
   email:jindc@163.com
 
