@@ -1,4 +1,12 @@
-#ifndef LX_RBTREE_H
+/*
+ * Copyright (C) Jin Decai
+ * Email:jindc@163.com
+ *
+ * The red-black tree code is based on the algorithm described in
+ * the "Introduction to Algorithms" by Cormen, Leiserson and Rivest.
+ */
+
+#ifndef LX_RBTREE_H 
 #define LX_RBTREE_H
 #include <string.h>
 #include <stdint.h>
@@ -25,7 +33,7 @@ enum lx_rbtree_color
 typedef struct lx_rbtree_node lx_rbtree_node;
 struct lx_rbtree_node
 {
-    uint64_t key;
+    uint64_t  key;
     void * data;
     lx_rbtree_color color;
     

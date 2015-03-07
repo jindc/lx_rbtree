@@ -196,7 +196,7 @@ void batch_test(int size)
     lx_rbtree_t tree, *ptree;
     int i,ret,temp;
     int vspace = 2;
-    int max_num = 1000000;
+    int max_num = 10000000;
     int is_detail = 0;
     ptree = &tree;
     lx_rbtree_init(ptree,malloc,free);
@@ -213,8 +213,10 @@ void batch_test(int size)
     printf("\n");
     
     for(i = 0; i < max_num;i++){
-        temp = i%2 == 0?i:i+1 ;
+        //temp = i%2 == 0?i:i+1 ;
         //temp = i;
+        temp = lx_rand(max_num);
+
     //    printf("delete %d \n",temp);
         
        //if(temp > 3800) print_rbtree(ptree->root,&ptree->nil,0,&vspace);
